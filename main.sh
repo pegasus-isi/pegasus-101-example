@@ -13,7 +13,6 @@ export SPLIT_INPUT_FILE=${DNA_FILE}
 bin/split.sh chr
 
 for i in `seq 24`; do
-    # record-mutations.sh is in the Docker image pegasus/101-example in /srv directory.
     bin/record-mutations.sh chr-$i.csv mutation-$i.csv &
 done
 wait
