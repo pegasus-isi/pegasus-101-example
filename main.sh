@@ -18,4 +18,4 @@ done
 wait
 
 # Requires 4 cores, 2 GB memory.
-bin/count.sh mutation ${COUNT_FILE}
+bin/count.sh mutation > ${COUNT_FILE}

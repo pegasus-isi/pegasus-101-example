@@ -2,12 +2,11 @@
 
 set -e
 
-if [ $# -ne 2 ]; then
-    echo "Usage: $0 <mutation-prefix> <count-file>"
+if [ $# -ne 1 ]; then
+    echo "Usage: $0 <mutation-prefix>"
     exit 1
 fi
 
 MUTATION_FILE_PREFIX=$1
-COUNT_FILE=$2
 
-wc -l ${MUTATION_FILE_PREFIX}-*csv | tail -1 | awk '{print $1}' > $COUNT_FILE
+wc -l ${MUTATION_FILE_PREFIX}-*csv | tail -1 | awk '{print $1}'
