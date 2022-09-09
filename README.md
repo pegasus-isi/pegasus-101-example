@@ -19,6 +19,7 @@ $ cat count-2.txt
 5999149
 ```
 
-## Recreate `main.sh` with Pegasus WMS
+## Task
 
-1. `bin/record-mutations.sh` command should be executed from a Docker container.
+1. Recreate `main.sh` with Pegasus WMS
+1. Modify the workflow to replace `bin/record-mutations.sh` command with one contained in a Docker container.
